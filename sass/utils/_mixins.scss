@@ -1,0 +1,33 @@
+@mixin paddingSection ($top: $section-padding, $bottom: $section-padding) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+@mixin centeredFlex ($type: flex, $justify: center) {
+    display: $type;
+    justify-content: $justify;
+    align-items: center;
+}
+
+@mixin navLink ($type) {
+    display: $type;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+@mixin marginColumn ($top: calc(-1 * #{$card-set-gap}), $left: calc(-1 * #{$card-set-gap})) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: $top;
+    margin-left: $left;
+}
+
+@mixin contentColumn ($column: 4, $top: $card-set-gap, $left: $card-set-gap) {
+    flex-basis: calc((100% / #{$column}) - #{$card-set-gap});
+    margin-top: $top;
+    margin-left: $left;
+}

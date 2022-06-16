@@ -1,0 +1,16 @@
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+    @include centeredFlex (flex, space-between);
+}
+
+.header__logo {
+    margin-right: 93px;
+}
+
+.header__site-nav {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,24 @@
+// utils
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+// base styles
+@import './base/common';
+
+// components
+@import './components/container';
+@import './components/header';
+@import './components/logo';
+@import './components/site-nav';
+@import './components/contact-nav';
+@import './components/hero';
+@import './components/advantages';
+@import './components/practic';
+@import './components/team';
+@import './components/client';
+@import './components/footer';
+@import './components/modal';
+@import './components/form';
+@import './components/work';

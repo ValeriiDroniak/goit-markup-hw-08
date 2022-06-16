@@ -1,0 +1,23 @@
+body {
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+
+    color: $primary-text-color;
+    background-color: $primary-bg-color;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+[class*="list"] {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+[class*="__link"] {
+    text-decoration: none;
+}

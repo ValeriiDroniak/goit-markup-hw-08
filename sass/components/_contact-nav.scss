@@ -1,0 +1,29 @@
+.contact-nav__list {
+	display: flex;
+}
+
+.contact-nav__item {
+
+	&:not(:last-child) {
+		margin-right: 50px;
+	}
+}
+
+.contact-nav__link {
+	@include navLink(inline-flex);
+	align-items: center;
+
+	color: $title-text-color;
+
+	transition: color $transition-animation;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+}
+
+.contact-nav__icon {
+	margin-right: 10px;
+	fill: currentColor;
+}

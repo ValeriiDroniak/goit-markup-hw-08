@@ -1,0 +1,40 @@
+.client {
+    @include paddingSection();
+}
+
+.client__container {
+    text-align: center;
+}
+
+.client__title {
+    @extend %_title;
+}
+
+.client__list {
+    @include marginColumn();
+}
+
+.client__item {
+    @include contentColumn($column: 6);
+}
+
+.client__link {
+    display: flex;
+    padding: 16px 32px;
+
+    color: $primary-icon-color;
+    outline: 1px solid $primary-icon-color;
+    border-radius: 4px;
+
+    transition: color $transition-animation, outline $transition-animation;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        outline: 1px solid $accent-color;
+    }
+}
+
+.client__icon {
+    fill: currentColor;
+}

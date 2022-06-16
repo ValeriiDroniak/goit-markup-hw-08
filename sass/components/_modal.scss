@@ -1,0 +1,65 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+
+    transition: opacity $transition-animation;
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+
+    padding: 40px;
+
+    background-color: $primary-bg-color;
+    box-shadow: $card-shadow;
+    border-radius: $border-radius;
+
+    transform: translate(-50%, -50%) scale(1, 1);
+    opacity: 1;
+    transition: transform $transition-animation, opacity $transition-animation;
+
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0.4, 0.1);
+        opacity: 0;
+    }
+}
+
+.modal__btn-closed {
+    position: absolute;
+    display: inline-flex;
+    top: 8px;
+    right: 8px;
+
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+
+    cursor: pointer;
+    background-color: $primary-bg-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.modal__btn-icon {
+    transition: fill $transition-animation;
+
+    .modal__btn-closed:hover &,
+    .modal__btn-closed:focus & {
+        fill: $accent-color;
+    }
+}

@@ -1,0 +1,133 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $footer-bg-color;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__address-container {
+    margin-right: 70px;
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+    color: $primary-bg-color;
+}
+
+// ------------------------------------
+//-------------------------------------
+.address {
+    font-style: inherit;
+}
+
+.address__item {
+
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+
+.address__link {
+    display: inline-block;
+
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+
+    transition: color $transition-animation;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+
+    &--white {
+        color: $primary-bg-color;
+    }
+}
+
+//-------------------------------------------
+//-------------------------------------------
+
+.footer__social-title {
+    @extend %titleFooter;
+}
+
+.footer__social-list {
+    display: flex;
+}
+
+.footer__social-item {
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.footer__social-link {
+    @include centeredFlex();
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.1);
+    color: $primary-bg-color;
+
+    transition: background-color $transition-animation;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+.footer__social-icon {
+    fill: currentColor;
+}
+
+//-------------------------------------------------
+//-------------------------------------------------
+
+.footer__subscription {
+    margin-left: auto;
+}
+
+.footer__subscription-title {
+    @extend %titleFooter;
+}
+
+.footer__subscription-form {
+    display: inline-flex;
+}
+
+
+.footer__subscription-input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding-left: 16px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.footer__form-btn {
+    @include centeredFlex();
+    @extend %btn;
+}
+
+.footer__subscription-icon {
+    margin-left: 10px;
+    fill: currentColor;
+}

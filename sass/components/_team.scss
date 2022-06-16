@@ -1,0 +1,81 @@
+.team {
+    @include paddingSection();
+    background-color: $primary-btn-color
+}
+
+.team__title {
+    @extend %_title;
+}
+
+.team__list {
+    @include marginColumn();
+}
+
+.team__item {
+    @include contentColumn();
+    box-shadow: $card-shadow;
+    @extend %bottomRadius;
+}
+
+.team__card {
+    padding-top: $card-set-gap;
+    padding-bottom: $card-set-gap;
+    background-color: $primary-bg-color;
+
+    text-align: center;
+    @extend %bottomRadius;
+}
+
+.team__card-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.team__card-text {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.team__social-list {
+    @include centeredFlex();
+    // display: flex;
+    // margin-left: auto;
+    // margin-right: auto;
+    // justify-content: center;
+}
+
+.team__social-item {
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.team__social-link {
+    @include centeredFlex();
+    width: 44px;
+    height: 44px;
+
+
+    border-radius: 50%;
+
+    color: $primary-icon-color;
+
+    transition: background-color $transition-animation, color $transition-animation;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $primary-bg-color;
+    }
+}
+
+.team__social-icon {
+    fill: currentColor;
+}
