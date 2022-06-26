@@ -1,5 +1,9 @@
 .client {
-    @include paddingSection();
+    @include paddingSection(60px, 60px);
+
+    @media screen and (min-width: $desktop) {
+        @include paddingSection();
+    }
 }
 
 .client__container {
@@ -8,6 +12,13 @@
 
 .client__title {
     @extend %_title;
+    margin-bottom: $card-set-gap;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.17;
+        margin-bottom: 50px;
+    }
 }
 
 .client__list {
@@ -15,12 +26,21 @@
 }
 
 .client__item {
-    @include contentColumn($column: 6);
+    @include contentColumn (2);
+
+    @media screen and (min-width: $tablet) {
+        @include contentColumn (3);
+    }
+
+    @media screen and (min-width: $desktop) {
+        @include contentColumn (6);
+    }
 }
 
 .client__link {
     display: flex;
-    padding: 16px 32px;
+    justify-content: center;
+    padding: 16px 0;
 
     color: $primary-icon-color;
     outline: 1px solid $primary-icon-color;
@@ -33,6 +53,14 @@
         color: $accent-color;
         outline: 1px solid $accent-color;
     }
+
+    // @media screen and (min-width: $tablet) {
+    //     // padding: 16px 60px;
+    // }
+
+    // @media screen and (min-width: $desktop) {
+    //     // padding: 16px 32px;
+    // }
 }
 
 .client__icon {

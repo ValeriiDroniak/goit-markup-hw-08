@@ -5,6 +5,15 @@
     width: 100%;
     height: 100%;
 
+    @media screen and (max-width: ($desktop - $krok)) {
+        padding: 93px 15px;
+    }
+
+    @media screen and (min-width: $mobile) and (max-width: ($desktop - $krok)) {
+        padding: 93px 0;
+    }
+
+    overflow-y: scroll;
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
 
@@ -17,21 +26,31 @@
 }
 
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 528px;
-    height: 581px;
-
+    position: relative;
     padding: 40px;
 
     background-color: $primary-bg-color;
     box-shadow: $card-shadow;
     border-radius: $border-radius;
 
-    transform: translate(-50%, -50%) scale(1, 1);
-    opacity: 1;
-    transition: transform $transition-animation, opacity $transition-animation;
+
+    @media screen and (min-width: $mobile) and (max-width: ($desktop - $krok)) {
+        margin: 0 auto;
+        width: 450px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 528px;
+
+        transform: translate(-50%, -50%) scale(1, 1);
+        opacity: 1;
+
+        transition: transform $transition-animation, opacity $transition-animation;
+    }
+
 
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0.4, 0.1);

@@ -11,11 +11,9 @@
 
 @mixin navLink ($type) {
     display: $type;
-    padding-top: 32px;
-    padding-bottom: 32px;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    // font-size: 14px;
+    // line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
@@ -30,4 +28,39 @@
     flex-basis: calc((100% / #{$column}) - #{$card-set-gap});
     margin-top: $top;
     margin-left: $left;
+}
+
+// ----------------------------------------
+@mixin bgImg ($img) {
+    background-image: $gradientHero,
+    url(../images/#{$img}.jpg);
+}
+
+
+@mixin bg-ratioImg ($img) {
+    background-image: $gradientHero,
+    url(../images/#{$img}.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: $gradientHero,
+        url(../images/#{$img}@2x.jpg);
+    }
+}
+
+
+
+
+
+// --------------------------------------------------------------------------------
+
+
+
+
+
+@mixin mediaBreakpoints {
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
 }

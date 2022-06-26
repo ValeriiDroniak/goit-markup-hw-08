@@ -1,20 +1,48 @@
 .team {
-    @include paddingSection();
-    background-color: $primary-btn-color
+    @include paddingSection(60px, 60px);
+    background-color: $primary-btn-color;
+
+    @media screen and (min-width: $desktop) {
+        @include paddingSection();
+    }
 }
 
 .team__title {
     @extend %_title;
+    margin-bottom: $card-set-gap;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+    }
 }
 
 .team__list {
-    @include marginColumn();
+    @media screen and (min-width: $tablet) {
+        @include marginColumn();
+    }
+
+    // @media screen and (min-width: $desktop) {
+    //     @include marginColumn();
+    // }
 }
 
 .team__item {
-    @include contentColumn();
     box-shadow: $card-shadow;
     @extend %bottomRadius;
+
+    @media screen and (max-width: ($tablet - $krok)) {
+        margin-bottom: $card-set-gap;
+    }
+
+    @media screen and (min-width: $tablet) {
+        @include contentColumn(2);
+    }
+
+    @media screen and (min-width: $desktop) {
+        @include contentColumn();
+    }
 }
 
 .team__card {

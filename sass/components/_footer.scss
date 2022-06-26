@@ -5,17 +5,44 @@
 }
 
 .footer__container {
-    display: flex;
-    align-items: baseline;
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: baseline;
+        text-align: start;
+    }
 }
 
 .footer__address-container {
-    margin-right: 70px;
+    @media screen and (max-width: ($tablet - $krok)) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin-right: 165px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 70px;
+    }
 }
 
 .footer__logo {
     margin-bottom: 20px;
     color: $primary-bg-color;
+}
+
+.footer__wrap-content {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+
+        @media screen and (max-width: ($desktop - $krok)) {
+            margin-bottom: 60px;
+        }
+    }
 }
 
 // ------------------------------------
@@ -25,9 +52,12 @@
 }
 
 .address__item {
-
     &:not(:last-child) {
-        margin-bottom: 9px;
+        margin-bottom: 8px;
+
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 9px;
+        }
     }
 }
 
@@ -52,6 +82,11 @@
 
 //-------------------------------------------
 //-------------------------------------------
+.footer__social {
+    @media screen and (max-width: ($tablet - $krok)) {
+        margin-bottom: 60px;
+    }
+}
 
 .footer__social-title {
     @extend %titleFooter;
@@ -59,6 +94,7 @@
 
 .footer__social-list {
     display: flex;
+    justify-content: center;
 }
 
 .footer__social-item {
@@ -94,7 +130,9 @@
 //-------------------------------------------------
 
 .footer__subscription {
-    margin-left: auto;
+    @media screen and (min-width: $desktop) {
+        margin-left: auto;
+    }
 }
 
 .footer__subscription-title {
@@ -102,15 +140,18 @@
 }
 
 .footer__subscription-form {
-    display: inline-flex;
+    @media screen and (min-width: $desktop) {
+        display: inline-flex;
+    }
 }
 
 
 .footer__subscription-input {
-    width: 358px;
+    width: 100%;
     height: 50px;
-    margin-right: 12px;
+    margin-bottom: 20px;
     padding-left: 16px;
+
 
     font-size: 16px;
     line-height: 1.25;
@@ -120,11 +161,26 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+    @media screen and (min-width: $mobile) and (max-width: ($desktop - $krok)) {
+        width: 450px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 358px;
+        margin-right: 12px;
+    }
 }
 
 .footer__form-btn {
     @include centeredFlex();
     @extend %btn;
+
+    @media screen and (max-width: ($desktop - $krok)) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .footer__subscription-icon {
