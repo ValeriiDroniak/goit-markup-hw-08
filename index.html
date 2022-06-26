@@ -22,32 +22,52 @@
     <!-- Шапка сайту -->
     <header class="header">
         <div class="header__container">
-            <nav class="header__site-nav">
-                <a href="./" lang="en" class="header__logo logo"><span class="logo__accent">Web</span>Studio</a>
-                <ul class="site-nav__list">
-                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link current">Студия</a></li>
-                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
-                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-                </ul>
-            </nav>
-            <ul class="contact-nav__list">
-                <li class="contact-nav__item">
-                    <a href="mailto:info@devstudio.com" class="contact-nav__link">
-                        <svg width="16" height="12" class="contact-nav__icon">
-                            <use href="./images/icons.svg#envelope"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="contact-nav__item">
-                    <a href="tel:+380961111111" class="contact-nav__link">
-                        <svg width="10" height="16" class="contact-nav__icon">
-                            <use href="./images/icons.svg#smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+            <a href="./" lang="en" class="header__logo logo"><span class="logo__accent">Web</span>Studio</a>
+            <div class="header__menu-container js-menu-container">
+                <button type="button" class="header__menu-btn header__menu-btn--close js-close-menu">
+                    <svg width="40" height="40" class="header__menu-icon">
+                        <use href="./images/icons.svg#menu-close"></use>
+                    </svg>
+                </button>
+                <nav class="header__site-nav">
+                    <ul class="site-nav__list">
+                        <li class="site-nav__item"><a href="./index.html" class="site-nav__link current">Студия</a></li>
+                        <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+                        <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__contact-nav">
+                    <ul class="contact-nav__list">
+                        <li class="contact-nav__item">
+                            <a href="mailto:info@devstudio.com" class="contact-nav__link contact-nav__link--small">
+                                <svg width="16" height="12" class="contact-nav__icon">
+                                    <use href="./images/icons.svg#envelope"></use>
+                                </svg>
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="contact-nav__item">
+                            <a href="tel:+380961111111" class="contact-nav__link contact-nav__link--blue">
+                                <svg width="10" height="16" class="contact-nav__icon">
+                                    <use href="./images/icons.svg#smartphone"></use>
+                                </svg>
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="social__list">
+                        <li class="social__item"><a href="" class="social__link">Instagram</a></li>
+                        <li class="social__item"><a href="" class="social__link">Twitter</a></li>
+                        <li class="social__item"><a href="" class="social__link">Facebook</a></li>
+                        <li class="social__item"><a href="" class="social__link">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button type="button" class="header__menu-btn js-open-menu">
+                <svg width="40" height="40" class="header__menu-icon">
+                    <use class="menu-open" href="./images/icons.svg#menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -118,15 +138,27 @@
                 <h2 class="practic__title">Чем мы занимаемся</h2>
                 <ul class="practic__list">
                     <li class="practic__item">
-                        <img src="./images/box-1.jpg" alt="Набирає команда" width="370" class="practic__img">
+                        <picture>
+                            <source srcset="./images/box-1.webp 1x, ./images/box-1@2x.webp 2x" type="image/webp">
+                            <img srcset="./images/box-1.jpg 1x, ./images/box-1@2x.jpg 2x" src="./images/box-1.jpg"
+                                alt="Набирає команда" width="370" class="practic__img">
+                        </picture>
                         <h3 class="practic__img-title">Десктопные приложения</h3>
                     </li>
                     <li class="practic__item">
-                        <img src="./images/box-2.jpg" alt="Переглядає дизайн" width="370" class="practic__img">
+                        <picture>
+                            <source srcset="./images/box-2.webp 1x, ./images/box-2@2x.webp 2x" type="image/webp">
+                            <img srcset="./images/box-2.jpg 1x, ./images/box-2@2x.jpg 2x" src="./images/box-2.jpg"
+                                alt="Переглядає дизайн" width="370" class="practic__img">
+                        </picture>
                         <h3 class="practic__img-title">Мобильные приложения</h3>
                     </li>
                     <li class="practic__item">
-                        <img src="./images/box-3.jpg" alt="Розглядає палітру кольорів" width="370" class="practic__img">
+                        <picture>
+                            <source srcset="./images/box-3.webp 1x, ./images/box-3@2x.webp 2x" type="image/webp">
+                            <img srcset="./images/box-3.jpg 1x, ./images/box-3@2x.jpg 2x" src="./images/box-3.jpg"
+                                alt="Розглядає палітру кольорів" width="370" class="practic__img">
+                        </picture>
                         <h3 class="practic__img-title">Дизайнерские решения</h3>
                     </li>
                 </ul>
@@ -140,7 +172,30 @@
                 <ul class="team__list">
                     <li class="team__item">
                         <div class="team__img-thumb">
-                            <img src="./images/img-1.jpg" alt="чоловік" width="270">
+                            <picture>
+                                <source
+                                    srcset="./images/img-1_270.webp 270w, ./images/img-1_540.webp 540w, ./images/img-1_270.webp 1x, ./images/img-1_540.webp 2x"
+                                    type="image/webp" media="(max-width: 300px), (min-width: 1200px)">
+                                <source
+                                    srcset="./images/img-1_270.jpg 270w, ./images/img-1_540.jpg 540w, ./images/img-1_270.jpg 1x, ./images/img-1_540.jpg 2x"
+                                    media="(max-width: 300px), (min-width: 1200px)">
+
+                                <source
+                                    srcset="./images/img-1_354.webp 354w, ./images/img-1_708.webp 708w, ./images/img-1_354.webp 1x, ./images/img-1_708.webp 2x"
+                                    type="image/webp" media="(max-width: 384px), (min-width: 768px)">
+                                <source
+                                    srcset="./images/img-1_354.jpg 354w, ./images/img-1_708.jpg 708w, ./images/img-1_354.jpg 1x, ./images/img-1_708.jpg 2x"
+                                    media="(max-width: 384px), (min-width: 768px)">
+
+                                <source
+                                    srcset="./images/img-1_450.webp 450w, ./images/img-1_900.webp 900w, ./images/img-1_450.webp 1x, ./images/img-1_900.webp 2x"
+                                    type="image/webp" media="(min-width: 385px)">
+                                <source
+                                    srcset="./images/img-1_450.jpg 450w, ./images/img-1_900.jpg 900w, ./images/img-1_450.jpg 1x, ./images/img-1_900.jpg 2x"
+                                    media="(min-width: 385px)">
+
+                                <img src="./images/img-1_270.jpg" alt="мужчина">
+                            </picture>
                         </div>
                         <div class="team__card">
                             <h3 class="team__card-title">Игорь Демьяненко</h3>
@@ -183,7 +238,30 @@
                     </li>
                     <li class="team__item">
                         <div class="team__img-thumb">
-                            <img src="./images/img-2.jpg" alt="жінка" width="270">
+                            <picture>
+                                <source
+                                    srcset="./images/img-2_270.webp 270w, ./images/img-2_540.webp 540w, ./images/img-2_270.webp 1x, ./images/img-2_540.webp 2x"
+                                    type="image/webp" media="(max-width: 300px), (min-width: 1200px)">
+                                <source
+                                    srcset="./images/img-2_270.jpg 270w, ./images/img-2_540.jpg 540w, ./images/img-2_270.jpg 1x, ./images/img-2_540.jpg 2x"
+                                    media="(max-width: 300px), (min-width: 1200px)">
+
+                                <source
+                                    srcset="./images/img-2_354.webp 354w, ./images/img-2_708.webp 708w, ./images/img-2_354.webp 1x, ./images/img-2_708.webp 2x"
+                                    type="image/webp" media="(max-width: 384px), (min-width: 768px)">
+                                <source
+                                    srcset="./images/img-2_354.jpg 354w, ./images/img-2_708.jpg 708w, ./images/img-2_354.jpg 1x, ./images/img-2_708.jpg 2x"
+                                    media="(max-width: 384px), (min-width: 768px)">
+
+                                <source
+                                    srcset="./images/img-2_450.webp 450w, ./images/img-2_900.webp 900w, ./images/img-2_450.webp 1x, ./images/img-2_900.webp 2x"
+                                    type="image/webp" media="(min-width: 385px)">
+                                <source
+                                    srcset="./images/img-2_450.jpg 450w, ./images/img-2_900.jpg 900w, ./images/img-2_450.jpg 1x, ./images/img-2_900.jpg 2x"
+                                    media="(min-width: 385px)">
+
+                                <img src="./images/img-2_270.jpg" alt="женщина">
+                            </picture>
                         </div>
                         <div class="team__card">
                             <h3 class="team__card-title">Ольга Репина</h3>
@@ -226,7 +304,30 @@
                     </li>
                     <li class="team__item">
                         <div class="team__img-thumb">
-                            <img src="./images/img-3.jpg" alt="чоловік" width="270">
+                            <picture>
+                                <source
+                                    srcset="./images/img-3_270.webp 270w, ./images/img-3_540.webp 540w, ./images/img-3_270.webp 1x, ./images/img-3_540.webp 2x"
+                                    type="image/webp" media="(max-width: 300px), (min-width: 1200px)">
+                                <source
+                                    srcset="./images/img-3_270.jpg 270w, ./images/img-3_540.jpg 540w, ./images/img-3_270.jpg 1x, ./images/img-3_540.jpg 2x"
+                                    media="(max-width: 300px), (min-width: 1200px)">
+
+                                <source
+                                    srcset="./images/img-3_354.webp 354w, ./images/img-3_708.webp 708w, ./images/img-3_354.webp 1x, ./images/img-3_708.webp 2x"
+                                    type="image/webp" media="(max-width: 384px), (min-width: 768px)">
+                                <source
+                                    srcset="./images/img-3_354.jpg 354w, ./images/img-3_708.jpg 708w, ./images/img-3_354.jpg 1x, ./images/img-3_708.jpg 2x"
+                                    media="(max-width: 384px), (min-width: 768px)">
+
+                                <source
+                                    srcset="./images/img-3_450.webp 450w, ./images/img-3_900.webp 900w, ./images/img-3_450.webp 1x, ./images/img-3_900.webp 2x"
+                                    type="image/webp" media="(min-width: 385px)">
+                                <source
+                                    srcset="./images/img-3_450.jpg 450w, ./images/img-3_900.jpg 900w, ./images/img-3_450.jpg 1x, ./images/img-3_900.jpg 2x"
+                                    media="(min-width: 385px)">
+
+                                <img src="./images/img-3_270.jpg" alt="мужчина">
+                            </picture>
                         </div>
                         <div class="team__card">
                             <h3 class="team__card-title">Николай Тарасов</h3>
@@ -269,7 +370,30 @@
                     </li>
                     <li class="team__item">
                         <div class="team__img-thumb">
-                            <img src="./images/img-4.jpg" alt="чоловік" width="270">
+                            <picture>
+                                <source
+                                    srcset="./images/img-4_270.webp 270w, ./images/img-4_540.webp 540w, ./images/img-4_270.webp 1x, ./images/img-4_540.webp 2x"
+                                    type="image/webp" media="(max-width: 300px), (min-width: 1200px)">
+                                <source
+                                    srcset="./images/img-4_270.jpg 270w, ./images/img-4_540.jpg 540w, ./images/img-4_270.jpg 1x, ./images/img-4_540.jpg 2x"
+                                    media="(max-width: 300px), (min-width: 1200px)">
+
+                                <source
+                                    srcset="./images/img-4_354.webp 354w, ./images/img-4_708.webp 708w, ./images/img-4_354.webp 1x, ./images/img-4_708.webp 2x"
+                                    type="image/webp" media="(max-width: 384px), (min-width: 768px)">
+                                <source
+                                    srcset="./images/img-4_354.jpg 354w, ./images/img-4_708.jpg 708w, ./images/img-4_354.jpg 1x, ./images/img-4_708.jpg 2x"
+                                    media="(max-width: 384px), (min-width: 768px)">
+
+                                <source
+                                    srcset="./images/img-4_450.webp 450w, ./images/img-4_900.webp 900w, ./images/img-4_450.webp 1x, ./images/img-4_900.webp 2x"
+                                    type="image/webp" media="(min-width: 385px)">
+                                <source
+                                    srcset="./images/img-4_450.jpg 450w, ./images/img-4_900.jpg 900w, ./images/img-4_450.jpg 1x, ./images/img-4_900.jpg 2x"
+                                    media="(min-width: 385px)">
+
+                                <img src="./images/img-4_270.jpg" alt="мужчина">
+                            </picture>
                         </div>
                         <div class="team__card">
                             <h3 class="team__card-title">Михаил Ермаков</h3>
@@ -370,63 +494,66 @@
     <footer class="footer">
         <div class="footer__container">
 
-            <!-- Адрес -->
-            <div class="footer__address-container">
-                <a href="./" lang="en" class="footer__logo logo "><span class="logo__accent">Web</span>Studio</a>
-                <address class="address">
-                    <ul class="address__list">
-                        <li class="address__item"><a href="https://goo.gl/maps/qfHzh91Hibz9nCDFA" target="_blank"
-                                rel="noopener noreferrer" class="address__link address__link--white">г. Киев, пр-т Леси
-                                Украинки,
-                                26</a></li>
-                        <li class="address__item"><a href="mailto:info@example.com"
-                                class="address__link">info@example.com</a>
+            <div class="footer__wrap-content">
+                <!-- Адрес -->
+                <div class="footer__address-container">
+                    <a href="./" lang="en" class="footer__logo logo "><span class="logo__accent">Web</span>Studio</a>
+                    <address class="address">
+                        <ul class="address__list">
+                            <li class="address__item"><a href="https://goo.gl/maps/qfHzh91Hibz9nCDFA" target="_blank"
+                                    rel="noopener noreferrer" class="address__link address__link--white">г. Киев, пр-т
+                                    Леси
+                                    Украинки,
+                                    26</a></li>
+                            <li class="address__item"><a href="mailto:info@example.com"
+                                    class="address__link">info@example.com</a>
+                            </li>
+                            <li class="address__item"><a href="tel:+380991111111" class="address__link">+38 099
+                                    111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+
+                <!-- Приєднуйтесь -->
+                <section class="footer__social">
+                    <h3 class="footer__social-title">присоединяйтесь</h3>
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item">
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                                class="footer__social-link">
+                                <svg width="20" height="20" class="footer__social-icon">
+                                    <use href="./images/icons.svg#instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address__item"><a href="tel:+380991111111" class="address__link">+38 099
-                                111 11 11</a>
+                        <li class="footer__social-item">
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                                class="footer__social-link">
+                                <svg width="20" height="20" class="footer__social-icon">
+                                    <use href="./images/icons.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                                class="footer__social-link">
+                                <svg width="20" height="20" class="footer__social-icon">
+                                    <use href="./images/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                                class="footer__social-link">
+                                <svg width="20" height="20" class="footer__social-icon">
+                                    <use href="./images/icons.svg#linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
+                </section>
             </div>
-
-            <!-- Приєднуйтесь -->
-            <section class="footer__social">
-                <h3 class="footer__social-title">присоединяйтесь</h3>
-                <ul class="footer__social-list">
-                    <li class="footer__social-item">
-                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
-                            class="footer__social-link">
-                            <svg width="20" height="20" class="footer__social-icon">
-                                <use href="./images/icons.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-                            class="footer__social-link">
-                            <svg width="20" height="20" class="footer__social-icon">
-                                <use href="./images/icons.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
-                            class="footer__social-link">
-                            <svg width="20" height="20" class="footer__social-icon">
-                                <use href="./images/icons.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
-                            class="footer__social-link">
-                            <svg width="20" height="20" class="footer__social-icon">
-                                <use href="./images/icons.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </section>
 
             <!-- Форма підписки -->
             <section class="footer__subscription">
@@ -506,6 +633,7 @@
         </div>
     </div>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 
 </body>
