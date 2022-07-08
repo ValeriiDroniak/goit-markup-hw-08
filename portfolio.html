@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description"
+        content="Створюємо, оптимізуємо сайти будь якої складності, а також просуваємо в пошукових системах. ">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,17 +28,17 @@
         <div class="header__container">
             <a href="./" lang="en" class="header__logo logo"><span class="logo__accent">Web</span>Studio</a>
             <div class="header__menu-container js-menu-container">
-                <button type="button" class="header__menu-btn header__menu-btn--close js-close-menu">
+                <button type="button" aria-label="Закрыть меню"
+                    class="header__menu-btn header__menu-btn--close js-close-menu">
                     <svg width="40" height="40" class="header__menu-icon">
                         <use href="./images/icons.svg#menu-close"></use>
                     </svg>
                 </button>
                 <nav class="header__site-nav">
                     <ul class="site-nav__list">
-                        <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
-                        <li class="site-nav__item"><a href="./portfolio.html"
-                                class="site-nav__link current">Портфолио</a></li>
-                        <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+                        <li class="site-nav__item"><a href="./index.html" class="site-nav__link current">Студия</a></li>
+                        <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+                        <li class="site-nav__item"><a href="#contact" class="site-nav__link">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header__contact-nav">
@@ -57,14 +61,26 @@
                         </li>
                     </ul>
                     <ul class="social__list">
-                        <li class="social__item"><a href="" class="social__link">Instagram</a></li>
-                        <li class="social__item"><a href="" class="social__link">Twitter</a></li>
-                        <li class="social__item"><a href="" class="social__link">Facebook</a></li>
-                        <li class="social__item"><a href="" class="social__link">LinkedIn</a></li>
+                        <li class="social__item">
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                                class="social__link">Instagram</a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"
+                                class="social__link">Twitter</a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                                class="social__link">Facebook</a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                                class="social__link">LinkedIn</a>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <button type="button" class="header__menu-btn js-open-menu">
+            <button type="button" aria-label="Меню" class="header__menu-btn js-open-menu">
                 <svg width="40" height="40" class="header__menu-icon">
                     <use class="menu-open" href="./images/icons.svg#menu"></use>
                 </svg>
@@ -92,7 +108,7 @@
                 <!-- Роботи -->
                 <ul class="work__list">
                     <li class="work__item">
-                        <a href="" class="work__link">
+                        <a href="#" class="work__link">
                             <div class="work__card-thumb">
                                 <picture>
                                     <source srcset="./images/project-1_370.webp 1x, ./images/project-1_740.webp 2x"
@@ -145,7 +161,7 @@
                         </a>
                     </li>
                     <li class="work__item">
-                        <a href="" class="work__link">
+                        <a href="#" class="work__link">
                             <div class="work__card-thumb">
                                 <picture>
                                     <source srcset="./images/project-2_370.webp 1x, ./images/project-2_740.webp 2x"
@@ -197,7 +213,7 @@
                         </a>
                     </li>
                     <li class="work__item">
-                        <a href="" class="work__link">
+                        <a href="#" class="work__link">
                             <div class="work__card-thumb">
                                 <picture>
                                     <source srcset="./images/project-3_370.webp 1x, ./images/project-3_740.webp 2x"
@@ -249,7 +265,7 @@
                         </a>
                     </li>
                     <li class="work__item">
-                        <a href="" class="work__link">
+                        <a href="#" class="work__link">
                             <div class="work__card-thumb">
                                 <picture>
                                     <source srcset="./images/project-4_370.webp 1x, ./images/project-4_740.webp 2x"
@@ -301,7 +317,7 @@
                         </a>
                     </li>
                     <li class="work__item">
-                        <a href="" class="work__link">
+                        <a href="#" class="work__link">
                             <div class="work__card-thumb">
                                 <picture>
                                     <source srcset="./images/project-5_370.webp 1x, ./images/project-5_740.webp 2x"
@@ -353,7 +369,7 @@
                         </a>
                     </li>
                     <li class="work__item">
-                        <a href="" class="work__link">
+                        <a href="#" class="work__link">
                             <div class="work__card-thumb">
                                 <picture>
                                     <source srcset="./images/project-6_370.webp 1x, ./images/project-6_740.webp 2x"
@@ -405,7 +421,7 @@
                         </a>
                     </li>
                     <li class="work__item">
-                        <a href="" class="work__link">
+                        <a href="#" class="work__link">
                             <div class="work__card-thumb">
                                 <picture>
                                     <source srcset="./images/project-7_370.webp 1x, ./images/project-7_740.webp 2x"
@@ -457,7 +473,7 @@
                         </a>
                     </li>
                     <li class="work__item">
-                        <a href="" class="work__link">
+                        <a href="#" class="work__link">
                             <div class="work__card-thumb">
                                 <picture>
                                     <source srcset="./images/project-8_370.webp 1x, ./images/project-8_740.webp 2x"
@@ -509,7 +525,7 @@
                         </a>
                     </li>
                     <li class="work__item">
-                        <a href="" class="work__link">
+                        <a href="#" class="work__link">
                             <div class="work__card-thumb">
                                 <picture>
                                     <source srcset="./images/project-9_370.webp 1x, ./images/project-9_740.webp 2x"
@@ -573,7 +589,7 @@
                 <!-- Адрес -->
                 <div class="footer__address-container">
                     <a href="./" lang="en" class="footer__logo logo "><span class="logo__accent">Web</span>Studio</a>
-                    <address class="address">
+                    <address id="contact" class="address">
                         <ul class="address__list">
                             <li class="address__item"><a href="https://goo.gl/maps/qfHzh91Hibz9nCDFA" target="_blank"
                                     rel="noopener noreferrer" class="address__link address__link--white">г. Киев, пр-т
@@ -596,14 +612,14 @@
                     <ul class="footer__social-list">
                         <li class="footer__social-item">
                             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
-                                class="footer__social-link">
+                                aria-label="Instagram" class="footer__social-link">
                                 <svg width="20" height="20" class="footer__social-icon">
                                     <use href="./images/icons.svg#instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer__social-item">
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"
                                 class="footer__social-link">
                                 <svg width="20" height="20" class="footer__social-icon">
                                     <use href="./images/icons.svg#twitter"></use>
@@ -612,7 +628,7 @@
                         </li>
                         <li class="footer__social-item">
                             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
-                                class="footer__social-link">
+                                aria-label="Facebook" class="footer__social-link">
                                 <svg width="20" height="20" class="footer__social-icon">
                                     <use href="./images/icons.svg#facebook"></use>
                                 </svg>
@@ -620,7 +636,7 @@
                         </li>
                         <li class="footer__social-item">
                             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
-                                class="footer__social-link">
+                                aria-label="LinkedIn" class="footer__social-link">
                                 <svg width="20" height="20" class="footer__social-icon">
                                     <use href="./images/icons.svg#linkedin"></use>
                                 </svg>

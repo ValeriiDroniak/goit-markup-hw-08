@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description"
+        content="Створюємо, оптимізуємо сайти будь якої складності, а також просуваємо в пошукових системах. ">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +28,8 @@
         <div class="header__container">
             <a href="./" lang="en" class="header__logo logo"><span class="logo__accent">Web</span>Studio</a>
             <div class="header__menu-container js-menu-container">
-                <button type="button" class="header__menu-btn header__menu-btn--close js-close-menu">
+                <button type="button" aria-label="Закрыть меню"
+                    class="header__menu-btn header__menu-btn--close js-close-menu">
                     <svg width="40" height="40" class="header__menu-icon">
                         <use href="./images/icons.svg#menu-close"></use>
                     </svg>
@@ -33,7 +38,7 @@
                     <ul class="site-nav__list">
                         <li class="site-nav__item"><a href="./index.html" class="site-nav__link current">Студия</a></li>
                         <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
-                        <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+                        <li class="site-nav__item"><a href="#contact" class="site-nav__link">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header__contact-nav">
@@ -56,14 +61,26 @@
                         </li>
                     </ul>
                     <ul class="social__list">
-                        <li class="social__item"><a href="" class="social__link">Instagram</a></li>
-                        <li class="social__item"><a href="" class="social__link">Twitter</a></li>
-                        <li class="social__item"><a href="" class="social__link">Facebook</a></li>
-                        <li class="social__item"><a href="" class="social__link">LinkedIn</a></li>
+                        <li class="social__item">
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                                class="social__link">Instagram</a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"
+                                class="social__link">Twitter</a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                                class="social__link">Facebook</a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                                class="social__link">LinkedIn</a>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <button type="button" class="header__menu-btn js-open-menu">
+            <button type="button" aria-label="Меню" class="header__menu-btn js-open-menu">
                 <svg width="40" height="40" class="header__menu-icon">
                     <use class="menu-open" href="./images/icons.svg#menu"></use>
                 </svg>
@@ -213,7 +230,7 @@
                             <ul class="team__social-list">
                                 <li class="team__social-item">
                                     <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
-                                        class="team__social-link">
+                                        aria-label="Instagram" class="team__social-link">
                                         <svg width="20" height="20" class="team__social-icon">
                                             <use href="./images/icons.svg#instagram"></use>
                                         </svg>
@@ -221,7 +238,7 @@
                                 </li>
                                 <li class="team__social-item">
                                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-                                        class="team__social-link">
+                                        aria-label="Twitter" class="team__social-link">
                                         <svg width="20" height="20" class="team__social-icon">
                                             <use href="./images/icons.svg#twitter"></use>
                                         </svg>
@@ -229,7 +246,7 @@
                                 </li>
                                 <li class="team__social-item">
                                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
-                                        class="team__social-link">
+                                        aria-label="Facebook" class="team__social-link">
                                         <svg width="20" height="20" class="team__social-icon">
                                             <use href="./images/icons.svg#facebook"></use>
                                         </svg>
@@ -237,7 +254,7 @@
                                 </li>
                                 <li class="team__social-item">
                                     <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
-                                        class="team__social-link">
+                                        aria-label="LinkedIn" class="team__social-link">
                                         <svg width="20" height="20" class="team__social-icon">
                                             <use href="./images/icons.svg#linkedin"></use>
                                         </svg>
@@ -289,7 +306,7 @@
                             <ul class="team__social-list">
                                 <li class="team__social-item">
                                     <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
-                                        class="team__social-link">
+                                        aria-label="Instagram" class="team__social-link">
                                         <svg width="20" height="20" class="team__social-icon">
                                             <use href="./images/icons.svg#instagram"></use>
                                         </svg>
@@ -297,7 +314,7 @@
                                 </li>
                                 <li class="team__social-item">
                                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-                                        class="team__social-link">
+                                        aria-label="Twitter" class="team__social-link">
                                         <svg width="20" height="20" class="team__social-icon">
                                             <use href="./images/icons.svg#twitter"></use>
                                         </svg>
@@ -305,7 +322,7 @@
                                 </li>
                                 <li class="team__social-item">
                                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
-                                        class="team__social-link">
+                                        aria-label="Facebook" class="team__social-link">
                                         <svg width="20" height="20" class="team__social-icon">
                                             <use href="./images/icons.svg#facebook"></use>
                                         </svg>
@@ -313,7 +330,7 @@
                                 </li>
                                 <li class="team__social-item">
                                     <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
-                                        class="team__social-link">
+                                        aria-label="LinkedIn" class="team__social-link">
                                         <svg width="20" height="20" class="team__social-icon">
                                             <use href="./images/icons.svg#linkedin"></use>
                                         </svg>
@@ -365,7 +382,7 @@
                             <ul class="team__social-list">
                                 <li class="team__social-item">
                                     <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
-                                        class="team__social-link">
+                                        aria-label="Instagram" class="team__social-link">
                                         <svg width="20" height="20" class="team__social-icon">
                                             <use href="./images/icons.svg#instagram"></use>
                                         </svg>
@@ -373,7 +390,7 @@
                                 </li>
                                 <li class="team__social-item">
                                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-                                        class="team__social-link">
+                                        aria-label="Twitter" class="team__social-link">
                                         <svg width="20" height="20" class="team__social-icon">
                                             <use href="./images/icons.svg#twitter"></use>
                                         </svg>
@@ -381,7 +398,7 @@
                                 </li>
                                 <li class="team__social-item">
                                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
-                                        class="team__social-link">
+                                        aria-label="Facebook" class="team__social-link">
                                         <svg width="20" height="20" class="team__social-icon">
                                             <use href="./images/icons.svg#facebook"></use>
                                         </svg>
@@ -389,7 +406,7 @@
                                 </li>
                                 <li class="team__social-item">
                                     <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
-                                        class="team__social-link">
+                                        aria-label="LinkedIn" class="team__social-link">
                                         <svg width="20" height="20" class="team__social-icon">
                                             <use href="./images/icons.svg#linkedin"></use>
                                         </svg>
@@ -441,7 +458,7 @@
                             <ul class="team__social-list">
                                 <li class="team__social-item">
                                     <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
-                                        class="team__social-link">
+                                        aria-label="Instagram" class="team__social-link">
                                         <svg width="20" height="20" class="team__social-icon">
                                             <use href="./images/icons.svg#instagram"></use>
                                         </svg>
@@ -449,7 +466,7 @@
                                 </li>
                                 <li class="team__social-item">
                                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-                                        class="team__social-link">
+                                        aria-label="Twitter" class="team__social-link">
                                         <svg width="20" height="20" class="team__social-icon">
                                             <use href="./images/icons.svg#twitter"></use>
                                         </svg>
@@ -457,7 +474,7 @@
                                 </li>
                                 <li class="team__social-item">
                                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
-                                        class="team__social-link">
+                                        aria-label="Facebook" class="team__social-link">
                                         <svg width="20" height="20" class="team__social-icon">
                                             <use href="./images/icons.svg#facebook"></use>
                                         </svg>
@@ -465,7 +482,7 @@
                                 </li>
                                 <li class="team__social-item">
                                     <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
-                                        class="team__social-link">
+                                        aria-label="LinkedIn" class="team__social-link">
                                         <svg width="20" height="20" class="team__social-icon">
                                             <use href="./images/icons.svg#linkedin"></use>
                                         </svg>
@@ -484,42 +501,42 @@
                 <h2 class="client__title">Постоянные клиенты</h2>
                 <ul class="client__list">
                     <li class="client__item">
-                        <a href="" class="client__link">
+                        <a href="#" aria-label="Company 1" class="client__link">
                             <svg width="106" height="60" class="client__icon">
                                 <use href="./images/icons.svg#company-1"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="client__item">
-                        <a href="" class="client__link">
+                        <a href="#" aria-label="Company 2" class="client__link">
                             <svg width="106" height="60" class="client__icon">
                                 <use href="./images/icons.svg#company-2"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="client__item">
-                        <a href="" class="client__link">
+                        <a href="#" aria-label="Company 3" class="client__link">
                             <svg width="106" height="60" class="client__icon">
                                 <use href="./images/icons.svg#company-3"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="client__item">
-                        <a href="" class="client__link">
+                        <a href="#" aria-label="Company 4" class="client__link">
                             <svg width="106" height="60" class="client__icon">
                                 <use href="./images/icons.svg#company-4"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="client__item">
-                        <a href="" class="client__link">
+                        <a href="#" aria-label="Company 5" class="client__link">
                             <svg width="106" height="60" class="client__icon">
                                 <use href="./images/icons.svg#company-5"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="client__item">
-                        <a href="" class="client__link">
+                        <a href="#" aria-label="Company 6" class="client__link">
                             <svg width="106" height="60" class="client__icon">
                                 <use href="./images/icons.svg#company-6"></use>
                             </svg>
@@ -538,7 +555,7 @@
                 <!-- Адрес -->
                 <div class="footer__address-container">
                     <a href="./" lang="en" class="footer__logo logo "><span class="logo__accent">Web</span>Studio</a>
-                    <address class="address">
+                    <address id="contact" class="address">
                         <ul class="address__list">
                             <li class="address__item"><a href="https://goo.gl/maps/qfHzh91Hibz9nCDFA" target="_blank"
                                     rel="noopener noreferrer" class="address__link address__link--white">г. Киев, пр-т
@@ -561,14 +578,14 @@
                     <ul class="footer__social-list">
                         <li class="footer__social-item">
                             <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
-                                class="footer__social-link">
+                                aria-label="Instagram" class="footer__social-link">
                                 <svg width="20" height="20" class="footer__social-icon">
                                     <use href="./images/icons.svg#instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer__social-item">
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"
                                 class="footer__social-link">
                                 <svg width="20" height="20" class="footer__social-icon">
                                     <use href="./images/icons.svg#twitter"></use>
@@ -577,7 +594,7 @@
                         </li>
                         <li class="footer__social-item">
                             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
-                                class="footer__social-link">
+                                aria-label="Facebook" class="footer__social-link">
                                 <svg width="20" height="20" class="footer__social-icon">
                                     <use href="./images/icons.svg#facebook"></use>
                                 </svg>
@@ -585,7 +602,7 @@
                         </li>
                         <li class="footer__social-item">
                             <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
-                                class="footer__social-link">
+                                aria-label="LinkedIn" class="footer__social-link">
                                 <svg width="20" height="20" class="footer__social-icon">
                                     <use href="./images/icons.svg#linkedin"></use>
                                 </svg>
@@ -616,7 +633,7 @@
     <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="modal__btn-closed" data-modal-close>
+            <button type="button" aria-label="Закрыть" class="modal__btn-closed" data-modal-close>
                 <svg width="18" height="18" class="modal__btn-icon">
                     <use href="./images/icons.svg#close"></use>
                 </svg>
@@ -663,7 +680,7 @@
                     <label class="form__label-check">
                         <input type="checkbox" name="license" class="form__input-check">
                         <span class="form__check-box"></span>
-                        <span class="form__text-check">Соглашаюсь с рассылкой и принимаю <a href=""
+                        <span class="form__text-check">Соглашаюсь с рассылкой и принимаю <a href="#"
                                 class="form__link">Условия
                                 договора</a></span>
                     </label>
